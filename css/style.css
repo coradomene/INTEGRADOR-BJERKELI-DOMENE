@@ -39,8 +39,7 @@ main {max-width: var(--max-width);margin: 24xp auto; padding: 0 16px;}
 }
 
 .menu-toggle {
-    background: transparent;
-    border: none;
+    background: #f72828df;
     font-size: 1.2;
     display: none;
     cursor: pointer;
