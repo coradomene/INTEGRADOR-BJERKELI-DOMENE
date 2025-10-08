@@ -1,69 +1,54 @@
 :root{
-    --bg: #b0f8f7;
-    --card:#f72828df;
-    --accent: rgba(68, 80, 239, 0.763);
-    --dark:#01010f;
-    --gap:16xp;
-    --max-width:1100xp;
-    --radius:8xp;
-    --font:"Quichsand", san-series;
+    --fondo: f6f8f7;
+    --principal: #aa1a1;
+    --texto: #222;
+    --blanco: #fff;
 }
 
-* { box-sizing: border-box; margin:0;padding:0;}
-html,body {height: 100%;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: var(--font);
-    background: var(--bg);
-    color: var(--dark);
-    line-height: 1,4;
-    padding: 20px;
+    font-family:'Quicksand',sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.5;
 }
-main {max-width: var(--max-width);margin: 24xp auto; padding: 0 16px;}
 
-.site-header{
+.encabezado {
+    background-color: var(--blanco);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: var(--gap);
-    background: var(--card);
-    padding: 12xp 18xp;
-    border-radius: var(--radius);
-    box-shadow: 0 2xp 6xp rgba(0, 0, 0, 0.5);
-}
-
-.logo a {
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 700;
-    font-size: 1.1;
-}
-
-.menu-toggle {
-    background: #f72828df;
-    font-size: 1.2;
-    display: none;
-    cursor: pointer;
-}
-
-.sr-only {position: absolute;left: -10000xp;top: auto;width: 1xp;height: 1xp; overflow: hidden;}
-
-.nav-links{
-    list-style: none;
-    display: flex;
-    gap: 18xp;
     align-items: center;
+    padding: 15xp, 30xp;
+    box-shadow: 0 2xp, 5xp rgba(0, 0,0,0.1);
 }
 
-.nav-links{
+.encabezado h1 {
+    color: var(--principal);
+    font-size: 22xp;
+}
+
+.menu {
+    display: flex;
+    gap: 20xp;
+}
+
+.menu {
     text-decoration: none;
-    color: var(--dark);
-    padding: 6xp 10xp;
-    border-radius: 6xp;
+    color: var(--texto);
+    font-weight: 600;
 }
 
-.nav-links:hover { background: rgba(0, 0, 0, 0.5);}
+.menu a:hover,
+.menu a:active {
+color: var(--principal);
+}
 
-.nav-link[aria-current="page"] {
-    background: var (--accent);
-    color:white;
+.bienvenida h2{
+    color: var(--principal);
+    margin-bottom: 10xp;
 }
