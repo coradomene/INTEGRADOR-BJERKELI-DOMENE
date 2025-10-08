@@ -1,6 +1,6 @@
 :root{
     --fondo: f6f8f7;
-    --principal: #aa1a1;
+    --principal: rgb(242, 242, 60);
     --texto: #222;
     --blanco: #fff;
 }
@@ -51,4 +51,36 @@ color: var(--principal);
 .bienvenida h2{
     color: var(--principal);
     margin-bottom: 10xp;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15xp;
+    margin: 30xp auto;
+    padding: 10xp;
+    background-color: var(--blanco);
+    border-radius: 10xp;
+    max-width: 500xp;
+    box-shadow: 0, 2xp, 10xp, rgba(0, 0, 0, 0.1);
+}
+
+.carousel imag {
+    width: 100%;
+    max-width: 350%;
+    border-radius: 10xp;
+}
+
+.carousel button {
+    background-color: var(--principal);
+    color: var(--blanco);
+    border: none;
+    padding: 10xp, 15xp;
+    border-radius: 20xp;
+    cursor: pointer;
+}
+
+.carousel button:hover {
+    background-color: #6fff;
 }
