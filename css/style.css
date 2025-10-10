@@ -61,7 +61,7 @@ color: var(--principal);
     gap: 15xp;
     margin: 30xp auto;
     padding: 10xp;
-    background-color: var(--blanco);
+    background-color: #fff;
     border-radius: 10xp;
     max-width: 500xp;
     box-shadow: 0, 2xp, 10xp, rgba(0, 0, 0, 0.1);
@@ -74,14 +74,19 @@ color: var(--principal);
 }
 
 .carousel button {
-    background-color: var(--principal);
-    color: var(--blanco);
+    background-color: red;
+    color: white;
     border: none;
     padding: 10xp, 15xp;
-    border-radius: 20xp;
+    border-radius: 50xp;
+    font-size: 20px;
     cursor: pointer;
 }
 
 .carousel button:hover {
-    background-color: #6fff;
+    background-color: rgb(12, 12, 12);
+}
+.carousel button{
+    width: 40px;
+    height: 40px;
 }
