@@ -51,9 +51,10 @@ body {
     font-weight: 600;
 }
 
-.menu a:hover, {
+.menu a:hover {
 color: var(--principal);
 }
+
 .bienvenida{
     text-align: center;
     margin-top: 30px;
@@ -79,7 +80,7 @@ color: var(--principal);
 
 .carrusel img {
     width: 100%;
-    max-width 400px;
+    max-width: 400px;
     border-radius: 10xp;
     display:block;
     margin:0 auto;
@@ -106,8 +107,5 @@ color: var(--principal);
     right:10px;
 }
 
-.carrusel button :hover
-    background-color: rgb(12, 12, 12); button
-    
-}
-
+.carrusel button :hover {
+    background-color: rgb(12, 12, 12); button :var(--fondo) }
