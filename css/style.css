@@ -144,7 +144,7 @@ color: var(--principal);
     justify-content: center;
 
 }
-.texto-carrusel{
+.texto-carrusel {
     position:absolute;
     bottom: 15px;
     left:50%;
