@@ -1,9 +1,9 @@
 :root{
-    --fondo:#5ae4f9;
+    --fondo:#69ebff;
     --principal: rgb(18, 22, 2);
     --texto: #222;
-    --blanco: #2ec6c6;
-    background-color: #00ffff;
+    --blanco: #36c7c7;
+    background-color: #eaabfd;
 }
 
 * {
@@ -33,6 +33,26 @@ body {
     max-width: 900px;
     border-radius: 8px;
     margin-top: 15px;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo-titulo h1 {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #08393b;
+}
+
+.logo {
+    width: 40px;   /* ajustá según tu imagen */
+    height: auto;
 }
 
 .encabezado h1 {

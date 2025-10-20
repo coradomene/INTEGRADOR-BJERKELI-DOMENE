@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded",function(){ const imagenes = [
     "img/gatito7.jpeg",
 ]
 const textos = [
-    "Brayan: le encanta jugar, comer y dormir, ya que es pequeño aun ",
-    "Coco: es muy timido pero muy amistoso",
-    "Kevin: es muy travieso pero muy cariñoso",
-    "Jaimito: rescatado de la calle, por eso su condicion, esta hace 6 meses con nosotros es super cariñoso",
-    "Ina: ella llego sola al refugio es mimosa pero no le gustan las fotos jaja",
-    "Gaston: rescatado de la calle, es un gato grande que solo busca tranquilidad y amor",
-    "Caramelo: llego hace tres meses y ama tomar leche (deslactosada)",
+    "Brayan: Le encanta jugar,comer y dormir ya que es pequeño aun ",
+    "Coco: Es timido pero muy amistoso",
+    "Kevin: Es muy travieso pero le encantan las caricias",
+    "Jaimito: Rescatado de la calle es por eso su condicion, esta hace 6 meses con nosotros el es cariñoso y le gustan los niños",
+    "Ina: Ella llego sola al refugio es mimosa pero no le gustan las fotos",
+    "Gaston: Rescatado de la calle, es un gato grande que solo busca tranquilidad y amor",
+    "Caramelo: Llego hace tres meses y ama tomar leche (deslactosada) ya que tiene solo 4 meses",
 ]
 let indice =0;
 
