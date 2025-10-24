@@ -199,4 +199,55 @@ color: var(--principal);
     line-height: 1.5;
 }
 
+.contacto {
+    background-color: #fff;
+    max-width: 600xp;
+    margin: 40xp auto;
+    padding: 30xp;
+    border-radius: 10xp;
+    box-shadow: 0 2px 10xp rgba(0,0, 0, 0.01);
+    text-align: center;
+}
 
+.contacto h2 {
+    color: var(--principal);
+    margin-bottom: 15xp;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15xp;
+}
+
+.campo labe {
+    font-weight: bold;
+    margin-bottom: 5xp;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8xp;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+background-color: #8aa1a1;
+color: white;
+padding: 10px 20 px;
+border: none;
+border-radius: 8xp;
+font-size: 16xp;
+cursor: pointer;
+}
+
+button:hover{
+    background-color: #6a8b8b;
+}
+
+#resultado {
+    margin-top: 20xp;
+    font-size: 16xp;
+}
