@@ -202,33 +202,33 @@ color: var(--principal);
 .contacto {
     background-color: #d1a6fc;
     max-width: 600xp;
-    margin: 40xp auto;
-    padding: 30xp;
+    margin: 40px auto;
+    padding: 30px;
     border-radius: 10xp;
-    box-shadow: 0 2px 10xp rgba(13, 13, 13, 0.01);
+    box-shadow: 0 2px 10px rgba(13, 13, 13, 0.01);
     text-align: center;
 }
 
 .contacto h2 {
     color: var(--principal);
-    margin-bottom: 15xp;
+    margin-bottom: 15px;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 15xp;
+    margin-bottom: 15px;
 }
 
 .campo label {
     font-weight: bold;
-    margin-bottom: 5xp;
+    margin-bottom: 5px;
 }
 
 .campo input {
     width: 100%;
-    padding: 8xp;
+    padding: 8px;
     border: 1px solid #7272f0c2;
     border-radius: 5px;
 }
@@ -236,10 +236,10 @@ color: var(--principal);
 button {
 background-color: #8e9cf8;
 color: rgb(15, 15, 15);
-padding: 10px 20 px;
+padding: 10px 20px;
 border:nose;
-border-radius: 20xp;
-font-size: 20xp;
+border-radius: 50px;
+font-size: 16px;
 cursor: pointer;
 }
 
@@ -248,6 +248,6 @@ button:hover{
 }
 
 #resultado {
-    margin-top: 20xp;
-    font-size: 20xp;
+    margin-top: 20px;
+    font-size: 20px;
 }
