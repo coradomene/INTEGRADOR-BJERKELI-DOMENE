@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded" , function()) {
+document.addEventListener("DOMContentLoaded" , function() {
     const form = document.getElementById("formContacto");
     const resultado = document.getElementById("resultado");
 
@@ -11,13 +11,15 @@ document.addEventListener("DOMContentLoaded" , function()) {
         const telefono = document.getElementById("telefono").value.trim();
 
 
-        const regexEmail = /^[\w.-]+@[a-zA-Z09.-]+\.[a-zA-Z]{2,}$/;
+        const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const regexTelefono = /^[0-9]{7,15}$/;   
+        
         
         let errores = [];
 
-        if (nombre === "");
+        if (nombre === ""){
         errores.push("Por favor ingresa tu nombre.");
-    }
+        }
 
         if (!regexEmail.test(email)) { 
             errores.push("Ingresa un Correo Electronico valido.");
@@ -45,5 +47,3 @@ document.addEventListener("DOMContentLoaded" , function()) {
         }
     });
 });
-
-
