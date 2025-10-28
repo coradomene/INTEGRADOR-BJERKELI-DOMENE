@@ -17,20 +17,22 @@
         <br> 
         <section class="contacto">
             <h2> Formulario de contacto</h2> <br> 
-            <form id="formcontacto">
+            <form id="formContacto">
                 <div class="campo">
                     <label for="nombre"> Nombre completo: </label>
                     <input type="text" id="nombre" name="nombre">
+                <div class="error" id="errorNombre"></div>
                 </div> <br>
-
                 <div class="campo">
                     <label for="email"> correo electronico : </label>
                     <input type="email" id="email" name="email">
+                    <div class="error" id="errorEmail"></div>
                 </div> <br>
 
                 <div class="campo">
                     <label for="telefono">Telefono:</label>
                     <input type="text" id="telefono" name="telefono">
+                    <div class="error" id="errorTelefono"></div>
                 </div> <br>
                 <button type="submit">Enviar</button>
             </form>

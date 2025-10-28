@@ -1,56 +1,52 @@
-console.log("form.js se esta ejecutando correctamente");
+//console.log("form.js se esta ejecutando correctamente");
 document.addEventListener("DOMContentLoaded" , function() {
     const form = document.getElementById("formContacto");
-    const resultado = document.getElementById("resultado");
+    //const resultado = document.getElementById("resultado");
 
     form.addEventListener("submit", function (event){
         event.preventDefault(); 
         console.log(" Se detectó el envío del formulario");
 
-        resultado.innerHTML = "";
+        document.getElementById("errorNombre").textContent=""
+        document.getElementById("errorEmail").textContent=""
+        document.getElementById("errorTelefono").textContent=""
+
+        
 
         const nombre = document.getElementById("nombre").value.trim();
         const email = document.getElementById("email").value.trim();
-        const telefono = document.getElementById("telefono").value.trim ();
+        const telefono = document.getElementById("telefono").value.trim();
 
 
         const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexTelefono = /^[0-9]{7,15}$/;   
         
         
-        let errores = [];
+        let hayError= false;
 
         if (nombre === ""){
-        errores.push("Por favor ingresa tu nombre.");
+            document.getElementById("errorNombre").textContent = "por favor ingrese su nombre";
+        hayError = true
+    }
+        if (email==="") {document.getElementById("errorEmail").textContent = "por favor ingresa tu email";
+            hayError = true
+        }else if (!regexEmail.test(email)) {
+            document.getElementById("errorEmail").textContent = "Ingresa un Correo Electronico valido.";
+            hayError = true;
         }
-
-        if (!regexEmail.test(email)) { 
-            errores.push("Ingresa un Correo Electronico valido.");
-        }
-
-        if (!regexTelefono.test(telefono)) {
-        errores.push("El teléfono debe tener entre 7 y 15 números.");
+        if (telefono===""){ 
+            document.getElementById("errorTelefono").textContent = "por favor ingrese su telefono";
+            hayError = true;
+        }else if (!regexTelefono.test(telefono)){
+        document.getElementById("errorTelefono").textContent = "el telefono debe tener entre 7 y 15 numeros";
+        hayError = true;
     }  
 
-        if (errores.length > 0) {
-        errores.forEach(error => {
-        const p = document.createElement("p");
-        p.style.color = "black";
-        p.style.backgroundColor = "red";
-        p.style.padding = "8px";
-        p.style.borderRadius = "6px";
-        p.style.marginBottom = "8px";
-        p.textContent = error;
-        resultado.appendChild(p);
-    });
-
-    } else {
-        const mensaje = document.createElement("p");
-        mensaje.style.color = "green";
-        mensaje.textContent = `Gracias, ${nombre}! Tus datos fueron enviados correctamente.`;
-        resultado.appendChild(mensaje);
-
+        if (!hayError){
+            alert(`gracias, ${nombre}!!! tus datos fueron enviados con exito`);
             form.reset();
         }
+        
+        
     });
 });
