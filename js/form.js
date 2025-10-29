@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded" , function() {
         const email = document.getElementById("email").value.trim();
         const telefono = document.getElementById("telefono").value.trim();
 
-
+        const regexNombre = /^[a-zA-Z]{2,20}$/;
         const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexTelefono = /^[0-9]{7,15}$/;   
         
@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded" , function() {
         if (nombre === ""){
             document.getElementById("errorNombre").textContent = "por favor ingrese su nombre";
         hayError = true
-    }
+    }   else if (!regexNombre.test(nombre)) {
+            document.getElementById("errorNombre").textContent = "Ingresa un nombre con minimo 2 y maximo 20 caracteres validos.";
+            hayError = true;
+
         if (email==="") {document.getElementById("errorEmail").textContent = "por favor ingresa tu email";
             hayError = true
         }else if (!regexEmail.test(email)) {
@@ -42,11 +45,20 @@ document.addEventListener("DOMContentLoaded" , function() {
         hayError = true;
     }  
 
-        if (!hayError){
-            alert(`gracias, ${nombre}!!! tus datos fueron enviados con exito`);
-            form.reset();
+        if (!hayError) {
+        mensajeFinal.textContent = `Gracias, ${nombre}! Tus datos fueron enviados con éxito.`;
+        mensajeFinal.style.color = "green";
+
+        //form.reset();
+        
+        try {
+        form.reset();
+    } catch (e) {
+    console.warn("form.reset() falló:", e);
+    }
+        
         }
         
-        
+        }  
     });
 });
