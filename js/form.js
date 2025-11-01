@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded" , function() {
         const email = document.getElementById("email").value.trim();
         const telefono = document.getElementById("telefono").value.trim();
 
-        const regexNombre = /^[a-zA-Z]{3,20}$/;
+        //const regexNombre = /^[a-zA-Z]{3,20}$/;
+        const regexNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,20}$/;
         const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexTelefono = /^[0-9]{7,15}$/;   
         
@@ -25,6 +26,10 @@ document.addEventListener("DOMContentLoaded" , function() {
         this.value = this.value.replace(/[^0-9]/g, ""); 
 });
         
+        document.getElementById("nombre").addEventListener("input", function() {
+        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
+});
+
         let hayError= false;
 
         if (nombre === ""){
