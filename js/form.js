@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     //const resultado = document.getElementById("resultado");
 
     form.addEventListener("submit", function (event){
-        event.preventDefault(); 
+        //event.preventDefault(); 
         console.log(" Se detectó el envío del formulario");
 
         document.getElementById("errorNombre").textContent=""
