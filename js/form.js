@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded" , function() {
 
         if (!hayError) {
         resultado.textContent = `Gracias, ${nombre}! Tus datos fueron enviados con éxito.`;
-        resultado.style.color = "green";
+        resultado.style.color = "yellow ";
 
         form.reset();
         

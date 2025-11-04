@@ -1,7 +1,7 @@
 :root{
     --fondo:#69ebff;
-    --principal: rgb(18, 22, 2);
-    --texto: #222;
+    --principal: #edfb2d; 
+    --texto: #f5eff1;
     --blanco: #36c7c7;
     background-color: #69ebff;
 }
@@ -24,7 +24,7 @@
 }
 
 .encabezado {
-    background-color:rgba(255,255,255,0.3);
+    background-color:rgba(122, 121, 121, 0.479);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,7 @@
     margin: 0;
     font-family: 'Arial', sans-serif;
     font-size: 28px;
-    color: #08393b;
+    color: #f8fafa;
 }
 
 .logo {
@@ -58,8 +58,9 @@
 
 .encabezado h1 {
     color: var(--principal);
-    font-size: 22px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#edfb2d;
 }
 
 .menu {
@@ -71,6 +72,7 @@
     text-decoration: none;
     color: var(--texto);
     font-weight: 600;
+    font-size: 20px;
 }
 
 .menu a:hover {
@@ -165,7 +167,6 @@ color: var(--principal);
     text-align: center;
     margin: 40px auto;
     max-width: 1000px;
-    background-color: #f49be4;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -181,7 +182,7 @@ color: var(--principal);
 }
 .columna {
     flex: 1;
-    background-color: rgb(168, 90, 242);
+    background-color: rgb(50, 70, 201);
     padding: 50px;
     border-radius: 50px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -194,19 +195,19 @@ color: var(--principal);
     margin-bottom: 10px;
 }
 .columna p {
-    color:#333;
+    color:#f1efef;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .contacto {
-    background-color: #d1a6fc;
+    background-color: #391d9c;
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(13, 13, 13, 0.01);
-    text-align: center;
+    text-align:center;
 }
 
 .contacto h2 {
@@ -252,7 +253,7 @@ button:hover{
     font-size: 20px;
 }
 div.error{
-    color:blueviolet;
+    color:rgb(173, 114, 228);
     background-color: black;
     padding: 4px 6px;
     border-radius: 4px;
@@ -272,13 +273,13 @@ div.error{
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .fondo-index {
-    background-image:url("../img/gatoconpersona.jpeg");
+    background-image:url("../img/gatovino.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;  /*para que quede fijo*/
 }
 .fondo-articulo{
-    background-image:url("../img/adoptme.jpeg") ;
+    background-image:url("../img/gatoymariposa.jpeg") ;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
