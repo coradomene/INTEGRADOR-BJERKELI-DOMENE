@@ -1,10 +1,17 @@
 //console.log("form.js se esta ejecutando correctamente");
 document.addEventListener("DOMContentLoaded" , function() {
     const form = document.getElementById("formContacto");
-    //const resultado = document.getElementById("resultado");
+    const resultado = document.getElementById("resultado");
+    document.getElementById("telefono").addEventListener("input", function() {
+        this.value = this.value.replace(/[^0-9]/g, ""); 
+});
+        
+        document.getElementById("nombre").addEventListener("input", function() {
+        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
+});
 
     form.addEventListener("submit", function (event){
-        //event.preventDefault(); 
+        event.preventDefault(); 
         console.log(" Se detectó el envío del formulario");
 
         document.getElementById("errorNombre").textContent=""
@@ -22,13 +29,13 @@ document.addEventListener("DOMContentLoaded" , function() {
         const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexTelefono = /^[0-9]{7,15}$/;   
         
-        document.getElementById("telefono").addEventListener("input", function() {
+        /*document.getElementById("telefono").addEventListener("input", function() {
         this.value = this.value.replace(/[^0-9]/g, ""); 
 });
         
         document.getElementById("nombre").addEventListener("input", function() {
         this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
-});
+});*/
 
         let hayError= false;
 
@@ -38,7 +45,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     }   else if (!regexNombre.test(nombre)) {
             document.getElementById("errorNombre").textContent = "Ingresa un nombre con minimo 3 y maximo 20 caracteres validos.";
             hayError = true;
-
+    }
         if (email==="") {document.getElementById("errorEmail").textContent = "Por favor ingresa tu email";
             hayError = true
         }else if (!regexEmail.test(email)) {
@@ -54,12 +61,11 @@ document.addEventListener("DOMContentLoaded" , function() {
     }  
 
         if (!hayError) {
-        mensajeFinal.textContent = `Gracias, ${nombre}! Tus datos fueron enviados con éxito.`;
-        mensajeFinal.style.color = "green";
+        resultado.textContent = `Gracias, ${nombre}! Tus datos fueron enviados con éxito.`;
+        resultado.style.color = "green";
 
         form.reset();
         
-        }
-        }  
+        } 
     });
 });
