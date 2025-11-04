@@ -14,17 +14,17 @@
 
     body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--fondo);
     color: var(--texto);
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: transparent;
 
 }
 
 .encabezado {
-    background-color: var(--blanco);
+    background-color:rgba(255,255,255,0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -270,4 +270,22 @@ div.error{
     height:auto;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.fondo-index {
+    background-image:url("../img/gatoconpersona.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /*para que quede fijo*/
+}
+.fondo-articulo{
+    background-image:url("../img/adoptme.jpeg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fondo-contacto{
+    background-image:url("../img/gatoventana.jpeg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
