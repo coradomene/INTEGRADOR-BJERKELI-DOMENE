@@ -1,9 +1,9 @@
 :root{
-    --fondo:#69ebff;
+    --fondo: #36c7c7;
     --principal: #edfb2d; 
     --texto: #f5eff1;
-    --blanco: #36c7c7;
-    background-color: #69ebff;
+    --blanco: #36c7c7;;
+    background-color: transparent;
 }
 
 * {
