@@ -1,9 +1,13 @@
 :root{
+<<<<<<< HEAD
     --fondo:#36c7c7;
+=======
+    --fondo: #36c7c7;
+>>>>>>> d9915ad469e6aa98e8387494e4afa4874b23dfa1
     --principal: #edfb2d; 
     --texto: #f5eff1;
-    --blanco: #36c7c7;
-    background-color: #69ebff;
+    --blanco: #36c7c7;;
+    background-color: transparent;
 }
 
 * {
