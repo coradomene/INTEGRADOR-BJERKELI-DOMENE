@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded" , function() {
     }  
 
         if (!hayError) {
-        resultado.textContent = `Gracias, ${nombre}! Tus datos fueron enviados con éxito.`;
+        resultado.innerHTML = `Gracias, ${nombre}!<br> Tus datos fueron enviados con éxito.`;
         resultado.style.color = "yellow ";
 
         form.reset();

@@ -1,5 +1,5 @@
 :root{
-    --fondo:#69ebff;
+    --fondo:#36c7c7;
     --principal: #edfb2d; 
     --texto: #f5eff1;
     --blanco: #36c7c7;
@@ -119,8 +119,8 @@ color: var(--principal);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgb(250, 4, 4);
-    color: white;
+    background-color: rgb(152, 2, 97);
+    color:#f5eff1;
     border: none;
     width: 60px;
     height: 60px;
@@ -254,6 +254,9 @@ button:hover{
 #resultado {
     margin-top: 20px;
     font-size: 20px;
+    color:#edfb2d;
+    font-weight:bold;
+    line-height: 1.5;
 }
 div.error{
     color:rgb(173, 114, 228);
