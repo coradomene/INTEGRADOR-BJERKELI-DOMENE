@@ -1,14 +1,11 @@
 :root{
-<<<<<<< HEAD
-    --fondo:#36c7c7;
-=======
     --fondo: #36c7c7;
->>>>>>> d9915ad469e6aa98e8387494e4afa4874b23dfa1
     --principal: #edfb2d; 
     --texto: #f5eff1;
     --blanco: #36c7c7;;
     background-color: transparent;
 }
+
 
 * {
     margin: 0;
@@ -23,8 +20,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-
+    /*background-color: transparent;*/
+    margin: 0;
+    min-height: 100vh; /*para que ocupe toda la pantalla*/
 }
 
 .encabezado {
@@ -283,11 +281,16 @@ div.error{
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 .fondo-index {
-    background-image:url("../img/gatovino.jpeg");
+    background-image: url("../img/gatovino2.jpeg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;  /*para que quede fijo*/
+    width: 100%; /*ancho de la pantalla*/
+    min-height: 100%; /*alto de la pagina*/
+
 }
+
 .fondo-articulo{
     background-image:url("../img/gatoymariposa.jpeg") ;
     background-size: cover;
