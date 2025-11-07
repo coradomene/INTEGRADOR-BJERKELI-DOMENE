@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded" , function() {
         resultado.innerHTML = `Gracias, ${nombre}!<br> Tus datos fueron enviados con éxito.`;
         resultado.style.color = "yellow ";
 
-        form.reset();
+        //form.reset();
         
         } 
     });
