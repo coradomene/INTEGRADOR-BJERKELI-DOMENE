@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded" , function() {
     const form = document.getElementById("formContacto");
     const resultado = document.getElementById("resultado");
+    
     document.getElementById("telefono").addEventListener("input", function() {
         this.value = this.value.replace(/[^0-9]/g, ""); 
 });
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded" , function() {
 
     form.addEventListener("submit", function (event){
         event.preventDefault(); 
-        console.log(" Se detectó el envío del formulario");
+        console.log("Se detectó el envío del formulario");
 
         document.getElementById("errorNombre").textContent=""
         document.getElementById("errorEmail").textContent=""
@@ -29,13 +30,7 @@ document.addEventListener("DOMContentLoaded" , function() {
         const regexEmail = /^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexTelefono = /^[0-9]{7,15}$/;   
         
-        /*document.getElementById("telefono").addEventListener("input", function() {
-        this.value = this.value.replace(/[^0-9]/g, ""); 
-});
-        
-        document.getElementById("nombre").addEventListener("input", function() {
-        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, "");
-});*/
+ 
 
         let hayError= false;
 
@@ -62,7 +57,7 @@ document.addEventListener("DOMContentLoaded" , function() {
 
         if (!hayError) {
         resultado.innerHTML = `Gracias, ${nombre}!<br> Tus datos fueron enviados con éxito.`;
-        resultado.style.color = "yellow ";
+        resultado.style.color = "yellow";
 
         //form.reset();
         
