@@ -243,7 +243,7 @@ button {
 background-color: #8e9cf8;
 color: rgb(15, 15, 15);
 padding: 10px 20px;
-border:nose;
+border:none;
 border-radius: 50px;
 font-size: 16px;
 cursor: pointer;
@@ -302,4 +302,5 @@ div.error{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
