@@ -301,5 +301,5 @@ div.error{
     background-image:url("../img/gato.ventana.png") ;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-repeat: no-repet;
 }
