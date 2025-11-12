@@ -2,14 +2,13 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Adoptando Huellitas - contacto</title>
         <link rel="stylesheet" href="css/style.css">
-        
-        
-    </head>
+         </head>
     <body class="fondo-contacto">
         <header class="encabezado">
-            <img src="./img/gato.ventana.png">
+            <img src="./img/gato.ventana.png" alt="gato en ventana">
             <h1>ADOPTANDO HUELLITAS</h1>
             <img src="./img/logo.jpeg" alt="logo" width="100">
             <div class="menu">
@@ -17,27 +16,27 @@
                 <a href="articulo.html">Adoptar</a>
                 <a href="contacto.html">contacto</a>
             </div>
-        </header> <br>
-        <br> 
+        </header> 
         <section class="contacto">
-            <h2> Formulario de contacto</h2> <br> 
+            <h2> Formulario de contacto</h2> 
+            
             <form id="formContacto" novalidate>
                 <div class="campo">
                     <label for="nombre"> Nombre completo: </label>
                     <input type="text" id="nombre" name="nombre">
                 <div class="error" id="errorNombre"></div>
-                </div> <br>
+                </div> 
                 <div class="campo">
                     <label for="email"> Correo electronico : </label>
                     <input type="email" id="email" name="email">
                     <div class="error" id="errorEmail"></div>
-                </div> <br>
+                </div> 
 
                 <div class="campo">
                     <label for="telefono">Telefono:</label>
                     <input type="text" id="telefono" name="telefono">
                     <div class="error" id="errorTelefono"></div>
-                </div> <br>
+                </div> 
                 <button type="submit">Enviar</button>
             </form>
             <div id="resultado"></div>
